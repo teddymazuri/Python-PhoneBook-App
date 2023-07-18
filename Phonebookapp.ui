@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home_screen</class>
+ <widget class="QMainWindow" name="home_screen">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Phone Book</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ICONS/7208668_application_phonebook_contact_icon.png</normaloff>ICONS/7208668_application_phonebook_contact_icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="contactTable">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>120</y>
+      <width>601</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>5</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>First Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Last Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Phone Number</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>11</y>
+      <width>180</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#3584e4;&quot;&gt;PHONE BOOK&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>221</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Contact Information</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>90</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;First Name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtFname">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>200</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>90</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Last Name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtLname">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>200</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>80</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;E-Mail:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtEmail">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>200</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>120</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Phone Number:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtPhone">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>200</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>80</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ID:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtId">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>110</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>40</y>
+      <width>601</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Search Phone Book</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>120</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Search Contact:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="search_contact">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>240</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_button">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>30</y>
+       <width>83</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ICONS/5094671_find_glass_search_zoom_icon.png</normaloff>ICONS/5094671_find_glass_search_zoom_icon.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="clear_button">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>30</y>
+       <width>110</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ICONS/49384_reload_icon.png</normaloff>ICONS/49384_reload_icon.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>340</y>
+      <width>60</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Status:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="message_box">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>340</y>
+      <width>390</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Status Message Will Appear Here!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>-4</y>
+      <width>62</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>ICONS/7208668_application_phonebook_contact_icon.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>859</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionUpdate"/>
+    <addaction name="actionDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionCancel"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_Prog"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionBackup_Database"/>
+    <addaction name="actionExport_pdf"/>
+    <addaction name="actionLoad_Backup"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_Contact">
+   <property name="text">
+    <string>New Contact</string>
+   </property>
+  </action>
+  <action name="actionEdit_Contact">
+   <property name="text">
+    <string>Edit Contact</string>
+   </property>
+  </action>
+  <action name="actionDelete_Contact">
+   <property name="text">
+    <string>Delete Contact</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionExit_2">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/285657_floppy_guardar_save_icon.png</normaloff>ICONS/285657_floppy_guardar_save_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/2530835_compose_create_edit_edit file_office_icon.png</normaloff>ICONS/2530835_compose_create_edit_edit file_office_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/1814090_delete_garbage_trash_icon.png</normaloff>ICONS/1814090_delete_garbage_trash_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionExit_3">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionExit_Prog">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/1891023_cancel_cercle_close_delete_dismiss_icon.png</normaloff>ICONS/1891023_cancel_cercle_close_delete_dismiss_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionBackup_Database">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/66056_database_upload_icon(1).png</normaloff>ICONS/66056_database_upload_icon(1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Backup Database</string>
+   </property>
+  </action>
+  <action name="actionExport_pdf">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/285666_pdf_file_icon.png</normaloff>ICONS/285666_pdf_file_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export to pdf</string>
+   </property>
+  </action>
+  <action name="actionCancel">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/9071111_erase_icon.png</normaloff>ICONS/9071111_erase_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </action>
+  <action name="actionLoad_Backup">
+   <property name="icon">
+    <iconset>
+     <normaloff>ICONS/66000_download_database_icon.png</normaloff>ICONS/66000_download_database_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load Backup</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
